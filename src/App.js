@@ -1,25 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import { createStore } from "redux";
 
-function App() {
+import { Status, Mode } from "./consts";
+import {
+  toggleStar,
+  none,
+  play,
+  pause,
+  resume,
+  ticking,
+  modeChange,
+} from './actions';
+import reducers from "./reducers";
+
+const store = createStore(
+  reducers,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+store.dispatch(play(1));
+
+store.dispatch(pause());
+
+store.dispatch(resume());
+
+store.dispatch(ticking());
+
+store.dispatch(none());
+
+
+store.dispatch(toggleStar(2));
+
+store.dispatch(
+  modeChange({mode: Mode.ALL})
+);
+
+
+
+// console.log(store.getState());
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      player
     </div>
   );
 }
-
-export default App;
