@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Status } from "../consts";
-import { play, pause, resume } from "../actions/currentSongAction";
+import { toggleStar, play, pause, resume } from '../actions';
 import './Song.css';
 
 
 
-function Song({ songs, status, pause, play, resume, num, index }) {
+function Song({ songs, status, pause, play, resume, num, index, toggleStar }) {
   return (
     <div className="song">
       {index !== num ? <button onClick={play.bind(this, num)}> none </button> :
@@ -17,6 +17,9 @@ function Song({ songs, status, pause, play, resume, num, index }) {
       {/* {
         index === num ? <button onClick={play(num)}> play </button> :
           <button onClick={play(num)}> none </button>} */}
+      <div onClick={toggleStar.bind(this, num)}>
+        {songs[num].isStar ? '★': '☆'}
+      </div>
 
       <div> {songs[num].name} </div>
       <div> {songs[num].artist} </div>
@@ -36,6 +39,7 @@ const mapDispatch2Props = {
   play,
   pause,
   resume,
+  toggleStar,
 };
 
 export default connect(mapState2Props, mapDispatch2Props)(Song);
