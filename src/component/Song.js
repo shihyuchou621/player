@@ -31,8 +31,8 @@ function Song({ songs, status, pause, play, resume, num, index, toggleStar }) {
         <div className="starButton" onClick={toggleStar.bind(this, num)}>☆</div>
       } */}
       <div className="songsData">
-        <div> {songs[num].name} </div>
-        <div> {songs[num].artist} </div>
+        <div className="songData"> {songs[num].name} </div>
+        <div className="songData"> {songs[num].artist} </div>
       </div>
     </div>
   );
