@@ -21,12 +21,16 @@ exports[`rbg should be correct 1`] = `
         <div
           class="songsData"
         >
-          <div>
+          <div
+            class="songData"
+          >
              
             song1
              
           </div>
-          <div>
+          <div
+            class="songData"
+          >
              
             artist1
              
@@ -46,12 +50,16 @@ exports[`rbg should be correct 1`] = `
         <div
           class="songsData"
         >
-          <div>
+          <div
+            class="songData"
+          >
              
             song2
              
           </div>
-          <div>
+          <div
+            class="songData"
+          >
              
             artist2
              
@@ -71,12 +79,16 @@ exports[`rbg should be correct 1`] = `
         <div
           class="songsData"
         >
-          <div>
+          <div
+            class="songData"
+          >
              
             song3
              
           </div>
-          <div>
+          <div
+            class="songData"
+          >
              
             artist3
              
@@ -96,12 +108,16 @@ exports[`rbg should be correct 1`] = `
         <div
           class="songsData"
         >
-          <div>
+          <div
+            class="songData"
+          >
              
             song4
              
           </div>
-          <div>
+          <div
+            class="songData"
+          >
              
             artist4
              
@@ -121,12 +137,16 @@ exports[`rbg should be correct 1`] = `
         <div
           class="songsData"
         >
-          <div>
+          <div
+            class="songData"
+          >
              
             song5
              
           </div>
-          <div>
+          <div
+            class="songData"
+          >
              
             artist5
              
@@ -146,12 +166,16 @@ exports[`rbg should be correct 1`] = `
         <div
           class="songsData"
         >
-          <div>
+          <div
+            class="songData"
+          >
              
             song6
              
           </div>
-          <div>
+          <div
+            class="songData"
+          >
              
             artist6
              
@@ -171,12 +195,16 @@ exports[`rbg should be correct 1`] = `
         <div
           class="songsData"
         >
-          <div>
+          <div
+            class="songData"
+          >
              
             song7
              
           </div>
-          <div>
+          <div
+            class="songData"
+          >
              
             artist7
              
@@ -196,12 +224,16 @@ exports[`rbg should be correct 1`] = `
         <div
           class="songsData"
         >
-          <div>
+          <div
+            class="songData"
+          >
              
             song8
              
           </div>
-          <div>
+          <div
+            class="songData"
+          >
              
             artist8
              
@@ -221,12 +253,16 @@ exports[`rbg should be correct 1`] = `
         <div
           class="songsData"
         >
-          <div>
+          <div
+            class="songData"
+          >
              
             song9
              
           </div>
-          <div>
+          <div
+            class="songData"
+          >
              
             artist9
              
