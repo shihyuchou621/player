@@ -1,0 +1,68 @@
+.Controller {
+  display: flex;
+}
+
+.Controller > * {
+  flex: 1;
+}
+
+.bigSign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigPlaySign:before {
+  width: 0;
+  height: 0;
+  content: "";
+  border-style: solid;
+  display: inline-block;
+  border-width: 15px 0 15px 30px;
+  border-color: transparent transparent transparent #AAA;
+}
+
+.bigPauseSign:before, .bigPauseSign:after {
+  content: "";
+  width: 12px;
+  height: 30px;
+  background-color: #AAA;
+  font-size: 22px;
+  display: inline-block; 
+}
+
+.bigPauseSign:before {
+  margin-right: 6px;
+}
+
+.nextSong:before, .nextSong:after {
+  width: 0;
+  height: 0;
+  content: "";
+  display: inline-block;
+  border-style: solid;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #AAA;
+}
+
+.lastSong:before, .lastSong:after {
+  width: 0;
+  height: 0;
+  content: "";
+  display: inline-block;
+  border-style: solid;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #AAA transparent transparent;
+}
+
+.bigPauseSign:hover:before, .bigPauseSign:hover:after {
+  background-color: #ccc;
+}
+
+.bigPlaySign:hover:before, .nextSong:hover:before, .nextSong:hover:after {
+  border-color: transparent transparent transparent #ccc;
+}
+
+.lastSong:hover:before, .lastSong:hover:after {
+  border-color: transparent #ccc transparent transparent;
+}

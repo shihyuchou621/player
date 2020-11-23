@@ -1,3 +1,71 @@
 .song {
-  border: 1px solid black;
+  display: inline-block;
+  width: 120px;
+  height: 160px;
+  margin: 10px;
+}
+
+.song > .button {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  background-color: #EEEEEE;
+}
+
+.button.current {
+  background-color: #AAAAAA;
+}
+
+.button:hover {
+  background-color: #CCCCCC;
+}
+
+.sign:hover:before {
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+.playSign:hover:before {
+  width: 0;
+  height: 0;
+  content: "";
+  display: block; 
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.pauseSign:hover:before {
+  content: "▌▌";
+  color: #fff;
+  font-size: 20px;
+  display: inline-block; 
+  /* display: block; 要有寬高才能使用 */
+}
+
+.starButton {
+  width: 25px;
+  height: 25px;
+  color: gray;
+  font-size: 25px;
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.starButton:before {
+  content: attr(data-star);
+}
+
+.starButton[data-star="★"] {
+  color: yellow;
+}
+
+.songsData {
+  left: 25px;
+  font-size: 12px;
+  margin-left: 5px;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

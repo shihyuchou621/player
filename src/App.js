@@ -43,21 +43,24 @@ const store = createStore(
 export default function App() {
   return (
     <Provider store={store}>
-      <div className="songArea">
-        player
-        <Song num={0} />
-        <Song num={1} />
-        <Song num={2} />
-        <Song num={3} />
-        <Song num={4} />
-        <Song num={5} />
-        <Song num={6} />
-        <Song num={7} />
-        <Song num={8} />
+      <div className="player">
+        <div className="songArea">
+          <Song num={0} />
+          <Song num={1} />
+          <Song num={2} />
+          <Song num={3} />
+          <Song num={4} />
+          <Song num={5} />
+          <Song num={6} />
+          <Song num={7} />
+          <Song num={8} />
+        </div>
+        <SongBar />
+        <div className="controlPanel">
+          <SongMode />
+          <Controler />
+        </div>
       </div>
-      <SongBar />
-      <Controler />
-      <SongMode />
     </Provider>
   );
 }

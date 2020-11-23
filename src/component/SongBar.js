@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Status, Mode } from "../consts";
 import { ticking, none, play } from "../actions/currentSongAction";
 import { modeChange } from "../actions/modeAction";
+import "./SongBar.css";
 
 const getRandomExcept = (len, expectIndex) => {
   const arr = [...Array(len).keys()];
@@ -71,10 +72,12 @@ function SongBar({sec, index, status, length, ticking, none, mode, play, songs, 
   }, [sec]);
 
   return (
-    <div>
-      <div>{timeform(sec)}</div>
-      <div>{"-" + timeform(length - sec)}</div>
-      <div>{index}</div>
+    <div className="SongBar">
+      <div className="bar">
+        <div className="progress" style={{width: `${sec/length*100}%`}} />
+      </div>
+      <div className="passTime">{timeform(sec)}</div>
+      <div className="lastTime">{"-" + timeform(length - sec)}</div>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from "react-redux";
 import { Status, Mode } from "../consts";
 import { play, pause, resume } from "../actions/currentSongAction";
+import "./Controler.css";
 
 const getRandomExcept = (len, expectIndex) => {
   const arr = [...Array(len).keys()];
@@ -25,19 +26,21 @@ function Controler({ status, pause, play, resume, index, mode, songs, }) {
   };
 
   return (
-    <div>
-      <div>
-        <button onClick={lastSong}>last</button>
-      </div>
-      <div>
-        {status === Status.PLAYING ? <button onClick={pause}> pause </button> :
-          status === Status.PAUSING ? <button onClick={resume}> resume </button> :
-            <button onClick={play.bind(this, index)}> play </button>
-        }
-      </div>
-      <div>
-        <button onClick={nextSong}>next</button>
-      </div>
+    <div className="Controller">
+      <div
+        className="lastSong bigSign"
+        onClick={lastSong}
+      />
+      {status === Status.PLAYING ?
+        <div className="bigPauseSign bigSign" onClick={pause} /> :
+        status === Status.PAUSING ?
+          <div className="bigPlaySign bigSign" onClick={resume} /> :
+          <div className="bigPlaySign bigSign" onClick={play.bind(this, index)} />
+      }
+      <div
+        className="nextSong bigSign"
+        onClick={nextSong}
+      />
     </div>
   );
 }

@@ -1,0 +1,28 @@
+.player {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  padding: 30px;
+}
+
+.songArea {
+  width: 420px;
+  height: 600px;
+}
+
+.controlPanel {
+  display: flex;
+}
+
+.controlPanel > *:nth-child(1) {
+  flex: 1;
+}
+
+.controlPanel > *:nth-child(2) {
+  flex: 2;
+}
+
+.controlPanel:after {
+  content: '';
+  flex: 1;
+}

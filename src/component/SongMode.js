@@ -2,6 +2,7 @@ import React from 'react';
 import { Mode } from "../consts";
 import { connect } from 'react-redux';
 import { modeChange } from "../actions/modeAction";
+import "./SongMode.css";
 
 function SongMode({mode, modeChange}) {
   return (
