@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rbg should be correct 1`] = `
+<div>
+  <div
+    class="player"
+  >
+    <div
+      class="songArea"
+    >
+      <div
+        class="song playButton"
+      >
+        <div
+          class="button current playSign sign"
+        />
+        <div
+          class="starButton"
+          data-star="☆"
+        />
+        <div
+          class="songsData"
+        >
+          <div>
+             
+            song1
+             
+          </div>
+          <div>
+             
+            artist1
+             
+          </div>
+        </div>
+      </div>
+      <div
+        class="song playButton"
+      >
+        <div
+          class="button playSign sign"
+        />
+        <div
+          class="starButton"
+          data-star="☆"
+        />
+        <div
+          class="songsData"
+        >
+          <div>
+             
+            song2
+             
+          </div>
+          <div>
+             
+            artist2
+             
+          </div>
+        </div>
+      </div>
+      <div
+        class="song playButton"
+      >
+        <div
+          class="button playSign sign"
+        />
+        <div
+          class="starButton"
+          data-star="☆"
+        />
+        <div
+          class="songsData"
+        >
+          <div>
+             
+            song3
+             
+          </div>
+          <div>
+             
+            artist3
+             
+          </div>
+        </div>
+      </div>
+      <div
+        class="song playButton"
+      >
+        <div
+          class="button playSign sign"
+        />
+        <div
+          class="starButton"
+          data-star="☆"
+        />
+        <div
+          class="songsData"
+        >
+          <div>
+             
+            song4
+             
+          </div>
+          <div>
+             
+            artist4
+             
+          </div>
+        </div>
+      </div>
+      <div
+        class="song playButton"
+      >
+        <div
+          class="button playSign sign"
+        />
+        <div
+          class="starButton"
+          data-star="☆"
+        />
+        <div
+          class="songsData"
+        >
+          <div>
+             
+            song5
+             
+          </div>
+          <div>
+             
+            artist5
+             
+          </div>
+        </div>
+      </div>
+      <div
+        class="song playButton"
+      >
+        <div
+          class="button playSign sign"
+        />
+        <div
+          class="starButton"
+          data-star="☆"
+        />
+        <div
+          class="songsData"
+        >
+          <div>
+             
+            song6
+             
+          </div>
+          <div>
+             
+            artist6
+             
+          </div>
+        </div>
+      </div>
+      <div
+        class="song playButton"
+      >
+        <div
+          class="button playSign sign"
+        />
+        <div
+          class="starButton"
+          data-star="☆"
+        />
+        <div
+          class="songsData"
+        >
+          <div>
+             
+            song7
+             
+          </div>
+          <div>
+             
+            artist7
+             
+          </div>
+        </div>
+      </div>
+      <div
+        class="song playButton"
+      >
+        <div
+          class="button playSign sign"
+        />
+        <div
+          class="starButton"
+          data-star="☆"
+        />
+        <div
+          class="songsData"
+        >
+          <div>
+             
+            song8
+             
+          </div>
+          <div>
+             
+            artist8
+             
+          </div>
+        </div>
+      </div>
+      <div
+        class="song playButton"
+      >
+        <div
+          class="button playSign sign"
+        />
+        <div
+          class="starButton"
+          data-star="☆"
+        />
+        <div
+          class="songsData"
+        >
+          <div>
+             
+            song9
+             
+          </div>
+          <div>
+             
+            artist9
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="SongBar"
+    >
+      <div
+        class="bar"
+      >
+        <div
+          class="progress"
+          style="width: 0%;"
+        />
+      </div>
+      <div
+        class="passTime"
+      >
+        0:00
+      </div>
+      <div
+        class="lastTime"
+      >
+        -3:00
+      </div>
+    </div>
+    <div
+      class="controlPanel"
+    >
+      <div>
+        <button>
+           
+          ONE
+           
+        </button>
+      </div>
+      <div
+        class="Controller"
+      >
+        <div
+          class="lastSong bigSign"
+        />
+        <div
+          class="bigPlaySign bigSign"
+        />
+        <div
+          class="nextSong bigSign"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
