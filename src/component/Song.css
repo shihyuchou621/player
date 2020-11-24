@@ -20,14 +20,14 @@
   background-color: #CCCCCC;
 }
 
-.sign:hover:before {
+.sign:before {
   top: 50%;
   left: 50%;
   position: relative;
   transform: translate(-50%, -50%);
 }
 
-.playSign:hover:before {
+.current.playSign:before, :not(.current).playSign:hover:before {
   width: 0;
   height: 0;
   content: "";
@@ -37,7 +37,7 @@
   border-color: transparent transparent transparent #fff;
 }
 
-.pauseSign:hover:before {
+.pauseSign:before {
   content: "▌▌";
   color: #fff;
   font-size: 20px;
